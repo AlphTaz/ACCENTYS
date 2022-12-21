@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url(img/forest.jpg); */
+  background-size: cover;
+  opacity: 0.3;
+}
+
+/* Header */
+
+.navbar {
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  background-image: url(img/sunset.jpg);
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.logo-accentys {
+  width: 200px;
+  height: 150px;
+  margin: 0px 10px;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: orange;
+}
+
+.navbar .menu-burger {
+  width: 35px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: none;
+}
+
+/* Fin Header */
+
+@media screen and (max-width: 1070px) {
+  /* Header */
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    color: black;
+    font-weight: bold;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .logo-accentys {
+    width: 150px;
+    height: 100px;
+    margin: 20px 50px;
+  }
+
+  .navbar .menu-burger {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+
+  /* Fin Header */
+}

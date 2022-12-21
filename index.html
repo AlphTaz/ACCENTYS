@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Accentys - Audt Expertise Conseil</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <img
+        src="/AC2/img/logo-removebg-preview.png"
+        alt="Menu Burger"
+        class="logo-accentys"
+      />
+
+      <!-- <a href="#" class="logo">ACCENTYS</a> -->
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="index.html">Accueil</a></li>
+          <li><a href="missions.html">Nos missions</a></li>
+          <li><a href="#">Qui sommes nous</a></li>
+          <li><a href="#">Actualités</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+
+      <img src="/AC2/img/menu-btn.png" alt="Menu Burger" class="menu-burger"/>
+    </nav>
+    <header></header>
+  </body> 
+  <script>
+    const menuBurger = document.querySelector(".menu-burger");
+    const navLinks = document.querySelector(".nav-links")
+
+    menuBurger.addEventListener("click", () => {
+      navLinks.classList.toggle('mobile-menu');
+    });
+  </script>
+</html>
